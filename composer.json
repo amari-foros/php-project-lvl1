@@ -1,10 +1,10 @@
 {
+    "bin": [
+        "bin/brain-games"
+    ],
     "name": "hexlet/code",
     "require": {
         "wp-cli/php-cli-tools"
-    },
-    "bin": [
-        "bin/brain-games"
-    ]
+    }
 }
 
