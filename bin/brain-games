@@ -2,4 +2,5 @@
 <?php
 
 echo 'Welcome to the Brain Games!';
-
+echo "May I have your name? John";
+echo "Hello, John!";
