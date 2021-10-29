@@ -3,6 +3,7 @@ install:
 
 brain-games:
 	./bin/brain-games
+	./bin/brain-even
 
 validate:
 	composer validate
