@@ -1,5 +1,8 @@
 {
+    "name": "phpstormprojects/phpprojectlvl1",
+    "description": "php-project-lvl1",
     "type": "project",
+    "license": "MIT",
     "bin": [
         "bin/brain-games",
         "bin/brain-even"
@@ -14,7 +17,8 @@
     ],
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/game.php"
         ]
     },
     "require-dev": {
