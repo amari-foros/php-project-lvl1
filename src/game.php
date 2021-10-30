@@ -40,6 +40,8 @@ function goAnswerTheQuestions()
         } else {
             line("Correct!");
         }
-        line("Congratulations, %s!", $name);
+        if(!next($arrayQuestion)) {
+            line("Congratulations, %s!", $name);
+        }
     }
 }
