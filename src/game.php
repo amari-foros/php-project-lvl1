@@ -32,7 +32,8 @@ function goAnswerTheQuestions()
 
     $arrayQuestion = [$arrayRand1, $arrayRand2, $arrayRand3];
     foreach ($arrayQuestion as $arrayRand) {
-        $answer = prompt('Question:', $arrayRand[0]);
+        line("Question: %s", $arrayRand[0]);
+        $answer = prompt('Your answer ');
         if ($arrayRand[1] != $answer) {
             line("'$answer' is wrong answer ;(. Correct answer was '$arrayRand[1]'.");
             line("Let's try again, %s!", $name);
