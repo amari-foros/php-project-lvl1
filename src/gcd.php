@@ -21,16 +21,16 @@ function goCalculateGcd()
     line("Hello, %s!", $name);
     line('Find the greatest common divisor of given numbers.');
 
-    $num1 = mt_rand(1, 100);
-    $num2 = mt_rand(1, 100);
+    $num1 = mt_rand(2, 100);
+    $num2 = mt_rand(2, 100);
     $rand1 = $num1 . " " . $num2;
 
-    $num3 = mt_rand(1, 100);
-    $num4 = mt_rand(1, 100);
+    $num3 = mt_rand(2, 100);
+    $num4 = mt_rand(2, 100);
     $rand2 = $num3 . " " . $num4;
 
-    $num5 = mt_rand(1, 100);
-    $num6 = mt_rand(1, 100);
+    $num5 = mt_rand(2, 100);
+    $num6 = mt_rand(2, 100);
     $rand3 = $num5 . " " . $num6;
 
     $trueAnswer1 = isGcd($num1, $num2);
