@@ -5,21 +5,21 @@ namespace Brain\Games\gcd;
 use function cli\line;
 use function cli\prompt;
 
+function isGcd(int $n, int $m)
+{
+    if ($m > 0) {
+        return isGcd($m, $n % $m);
+    } else {
+        return abs($n);
+    }
+}
+
 function goCalculateGcd()
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-    line('What is the result of the expression?');
-
-    function goCalculateGcd(int $num1, int $num2)
-    {
-        if ($num2 > 0) {
-            return goCalculateGcd($num2, $num1 % $num2);
-        } else {
-            return abs($num1);
-        }
-    }
+    line('Find the greatest common divisor of given numbers.');
 
     $num1 = mt_rand(1, 100);
     $num2 = mt_rand(1, 100);
@@ -33,9 +33,9 @@ function goCalculateGcd()
     $num6 = mt_rand(1, 100);
     $rand3 = $num5 . " " . $num6;
 
-    $trueAnswer1 = goCalculateGcd($num1, $num2);
-    $trueAnswer2 = goCalculateGcd($num3, $num4);
-    $trueAnswer3 = goCalculateGcd($num5, $num6);
+    $trueAnswer1 = isGcd($num1, $num2);
+    $trueAnswer2 = isGcd($num3, $num4);
+    $trueAnswer3 = isGcd($num5, $num6);
 
     $arrayRand1 = [$rand1, $trueAnswer1];
     $arrayRand2 = [$rand2, $trueAnswer2];
