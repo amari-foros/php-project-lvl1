@@ -21,12 +21,13 @@
     ],
     "autoload": {
         "files": [
-            "src/Cli.php",
-            "src/game.php",
-            "src/calc.php",
-            "src/gcd.php",
-            "src/progression.php",
-            "src/prime.php"
+            "src/games/Cli.php",
+            "src/games/game.php",
+            "src/games/calc.php",
+            "src/games/gcd.php",
+            "src/games/progression.php",
+            "src/games/prime.php",
+            "src/Engine.php"
         ]
     },
     "require-dev": {

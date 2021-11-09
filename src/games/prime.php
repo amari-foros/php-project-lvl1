@@ -4,6 +4,8 @@ namespace Brain\Games\prime;
 
 use function cli\line;
 use function cli\prompt;
+use function src\Engine\run;
+use function src\Engine\engine;
 
 function goNumberIsPrime()
 {
