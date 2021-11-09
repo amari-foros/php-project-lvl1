@@ -42,4 +42,5 @@ function goCalculateProgression()
             line("Congratulations, %s!", $name);
         }
     }
+
 }
