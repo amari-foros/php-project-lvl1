@@ -7,6 +7,7 @@ brain-games:
 	./bin/brain-calc
 	./bin/brain-gcd
 	./bin/brain-progression
+	./bin/brain-prime
 
 validate:
 	composer validate
