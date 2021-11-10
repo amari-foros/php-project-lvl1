@@ -4,7 +4,7 @@ namespace Brain\Games\Even;
 
 use function Brain\Engine\engine;
 
-function numberIsEven()
+function numberIsEven(): void
 {
     $rand1 = mt_rand();
     $rand2 = mt_rand();

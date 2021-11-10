@@ -13,7 +13,7 @@ function isGcd($n, $m)
     }
 }
 
-function calculateGcd()
+function calculateGcd(): void
 {
     $num1 = mt_rand(2, 100);
     $num2 = mt_rand(2, 100);

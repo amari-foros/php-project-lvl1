@@ -4,7 +4,7 @@ namespace Brain\Games\Calc;
 
 use function Brain\Engine\engine;
 
-function countCalculate()
+function countCalculate(): void
 {
     $arrayQuestion = [];
     $operators = ['+', '-', '*'];
