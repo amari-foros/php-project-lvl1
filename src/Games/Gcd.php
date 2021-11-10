@@ -4,7 +4,7 @@ namespace Brain\Games\Gcd;
 
 use function Brain\Engine\engine;
 
-function isGcd($n, $m)
+function isGcd(int $n, int $m): int
 {
     if ($m > 0) {
         return isGcd($m, $n % $m);
