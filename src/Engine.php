@@ -1,19 +1,17 @@
 <?php
 
-namespace Brain\Games\Engine;
+namespace Brain\Engine;
 
 use function cli\line;
 use function cli\prompt;
 
-function run()
+function engine(array $arrayQuestion, string $rules): void
 {
     line('Welcome to the Brain Game!');
     $name = prompt('May I have your name?');
     line("Hello, %s!", $name);
-}
+    line($rules);
 
-function engine()
-{
     foreach ($arrayQuestion as $arrayRand) {
         line("Question: %s", $arrayRand[0]);
         $answer = prompt('Your answer ');
