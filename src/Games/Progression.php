@@ -4,7 +4,7 @@ namespace Brain\Games\Progression;
 
 use function Brain\Engine\engine;
 
-function calculateProgression()
+function calculateProgression(): void
 {
     $arrayQuestion = [];
     for ($i = 0; $i < 3; $i++) {
