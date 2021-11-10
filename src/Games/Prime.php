@@ -4,7 +4,6 @@ namespace Brain\Games\Prime;
 
 use function Brain\Engine\engine;
 
-
 function numberIsPrime()
 {
     $arrayQuestion = array();
